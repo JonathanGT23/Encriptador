@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Cifrado</title>
+
+
+
+        <link rel="stylesheet" href="reset.css">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="script.js"> </script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </head>
+   
+    <body>
+
+
+        <header>
+                <div class="imagen-logo">
+
+                    <img src="imagenes/Logo.png" alt="Logo Alura" onclick="reload()" class="imagen-logo1">
+
+                </div>
+                
+                
+
+        </header>
+
+
+        <main>
+
+
+            <section class="parte1">
+
+                    <div class="area1">
+               
+                        <textarea   cols="12" rows="5" class="area-texto" id="area-texto" placeholder="Ingrese el texto aqui"                
+                    
+                        
+
+                        onkeyup="this.value=this.value.toLowerCase()"></textarea>
+                    
+                        
+                    </div>
+                    
+                    
+
+                
+                    <div class="importante">
+
+                        <p><img src="imagenes/bi_exclamation-circle-fill.png" alt="Importante"> Solo letras minúsculas y sin acentos</p>
+
+                    </div>
+                  
+
+                
+
+              
+                    <div class="botones">
+
+                        <button type="button" class="btn_cifrar" id="btn_cifrar" onclick="encriptar()">Encriptar</button>
+                        <button type="button" class="btn_decifrar" id="btn_decifrar" onclick="decifrar()">Desencriptar</button>
+
+
+                    
+                     </div>
+              
+
+            </section>
+
+
+            <section class="parte2">
+
+                    <div class="muneco">
+
+                        <img src="imagenes/Muñeco.png" alt="Muñeco" id="muneco">
+
+                    </div>
+                    
+
+                    <div class="texto">
+
+                        <h1 id="texto1">Ningún mensaje fue encontrado</h1>
+
+                        <p id="texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+                       
+
+                    </div>
+                    
+                    <div class="area">
+
+                        <textarea cols="12" rows="5" class="area-resultado" id="area-resultado" ></textarea>
+                    </div>
+
+                    
+
+                    <div class="copiar">
+
+                        
+
+                        <button type="button" id="btn-copiar" class="btn-copiar" onclick="copiar_txt()">Copiar</button>
+                        
+                    
+                    </div>
+                    
+            
+
+                        
+
+            </section>
+ 
+
+        </main>
+
+
+
+        <footer>
+       
+           
+            <div class="datos">
+
+            
+                <p class="datos">Creado por Jonathan González T.</p>
+
+
+            </div>
+         
+           
+
+           <div class="redes">
+
+            
+
+            <a href="https://www.facebook.com/profile.php?id=100088565150787" class="fa fa-facebook" target="_blank"></a>
+           
+            <a href="https://www.instagram.com/jonathan_gonzalezt/" target="_blank"class="fa fa-instagram"></a>
+
+            <a href="https://www.linkedin.com/in/jonathan-gonz%C3%A1lez-tenorio-a2a633235/" class="fa fa-linkedin" target="_blank"></a>
+           
+            <a href="#" class="fa fa-github"></a>
+           </div>
+
+           
+
+
+        </footer>
+
+
+
+
+    </body>
+
+
+</html>
